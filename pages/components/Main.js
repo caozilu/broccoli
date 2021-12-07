@@ -5,8 +5,7 @@ import RequestSendForm from "./RequestSendForm";
 export default function Main() {
   const [visible, setVisible] = useState(false);
 
-  const onSend = (values) => {
-    console.log("Received values of form: ", values);
+  const onSend = () => {
     setVisible(false);
   };
 
