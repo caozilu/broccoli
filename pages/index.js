@@ -9,6 +9,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <div>
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
+      </div>
+
       <Head>
         <title>{siteName} | An upcoming online service company</title>
         <meta
@@ -18,7 +24,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-sacle=1, maximum-scale=1"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1"
         />
       </Head>
 
