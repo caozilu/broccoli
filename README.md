@@ -1,29 +1,51 @@
-# Next.js + Tailwind CSS Example
+# A simple full-stack web application for Broccoli & Co.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This project features a wide range of web techologies including but not limited to:
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+#### Front end
+
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Ant Design](https://ant.design/)
+
+#### Back end
+
+- [Express](https://expressjs.com/)
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+
+#### Cloud
+
+- [AWS](https://aws.amazon.com/)
+
+#### Testing
+
+- [Jest](https://jestjs.io/)
+- [Jasmine](https://jasmine.github.io/)
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Preview the web app live on a [PC or Mac](http://ec2-3-26-215-171.ap-southeast-2.compute.amazonaws.com/), or on Mobile:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+![scan qrcode to preview](/public/qrcode.png "qrcode")
 
-## Deploy your own
+## Run locally
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+1. Clone the repo from GitHub
+2. Front end:
+   - Install dependencies by running `npm install` in the root directory
+   - Run `npm run test` to run tests
+   - If all test cases in the `__tests__` directory passed, run `npm run export` to build the front end into static assets and output to the `server/src/_static` directory
+3. Back end:
+   - Install dependencies by running `npm install` in the `server` directory
+   - Run `npm start` to start the server
+   - Run `npm run test` to run tests and expect no failures occurred
+4. Database:
+   - Install MongoDB by following the [MongoDB installation guide](https://docs.mongodb.com/manual/administration/install-community/)
+   - In MongoDB Compass, create a database `broccoli` and add its first collection `requests`: [How to create a database in MongoDB Compass](https://docs.mongodb.com/compass/master/databases/)
+5. Access the site with `localhost:8000` in the browser
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Deployment
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+This app has been deployed to AWS EC2 instances with a Free Tier account.
