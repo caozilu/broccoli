@@ -12,6 +12,7 @@ server/node_modules
 # next.js
 /.next/
 /out/
+server/src/_static
 
 # production
 /build
