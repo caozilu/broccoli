@@ -49,3 +49,4 @@ Preview the web app live on a [PC or Mac](http://ec2-3-26-215-171.ap-southeast-2
 ## Deployment
 
 This app has been deployed to AWS EC2 instances with a Free Tier account.
+Update: instance has been turned down since May 7th, 2022.
